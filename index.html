@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
+	<script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
+</head>
+<body>
+	<h1>Rock - Paper - Scissors</h1>
+	<br>
+	<div id='errorZone'>Two players are already playing. Please wait for one to leave before attempting to join again.</div>
+
+
+		<form id="nameInputZone">
+			<div id="nameInputZoneInterior">
+			    <label>
+			    		<span>Name:</span> 
+				    <input type="text" id='nameInput' placeholder='Name' />
+				    <button id='nameSubmit'>
+						Submit
+					</button>
+			    </label>
+			</div>
+		</form>
+
+	<div id='leaveZone'>
+		<button id='leaveButton'>Leave</button>
+	</div>
+
+	<div id='player1ChoiceArea' class='playerChoiceArea'>
+		You are Player 1
+		<div id='player1SelectionZone' class='playerSelectionZone'></div>
+		<button id='rock1' class='player1ChoiceButton playerChoiceButton'><img src='assets/images/rock.png'></button>
+		<button id='paper1' class='player1ChoiceButton playerChoiceButton'><img src='assets/images/paper.png'></button>
+		<button id='scissors1' class='player1ChoiceButton playerChoiceButton'><img src='assets/images/scissors.png'></button>
+	</div>
+	<div id='player2ChoiceArea' class='playerChoiceArea'>
+		You are Player 2
+		<div id='player2SelectionZone' class='playerSelectionZone'></div>
+		<button id='rock2' class='player2ChoiceButton playerChoiceButton'><img src='assets/images/rock.png'></button>
+		<button id='paper2' class='player2ChoiceButton playerChoiceButton'><img src='assets/images/paper.png'></button>
+		<button id='scissors2' class='player2ChoiceButton playerChoiceButton'><img src='assets/images/scissors.png'></button>
+	</div>
+	<div id='resultsDiv'></div>
+
+		<div id='player1ScoreArea' class='scoreArea'>
+			<div id='player1NameZone'>Player 1 :<br></div>
+			<div id='player1WinsArea'>Wins : 0<br></div>
+			<div id='player1LossesArea'>Player : 0<br></div>
+		</div>
+		<div id='player2ScoreArea' class='scoreArea'>
+			<div id='player2NameZone'>Player 2 :<br></div>
+			<div id='player2WinsArea'>Wins : 0<br></div>
+			<div id='player2LossesArea'>Losses : 0<br></div>
+		</div>
+			<br>
+	<div id='chatError'>Enter your name above to chat.</div>
+	<div id='chatRoom'>
+		<form id='chatWhite'>
+		    <div>
+		        <div id='messagesDiv' class="msg-wrapper"></div>
+		        <hr />
+		    </div>
+
+		    <div>
+		    	<label id='messageLabel'>Message :
+		        	<textarea id='messageInput' placeholder='Message'></textarea>
+		    	</label>
+		  	</div>
+		</form>
+	</div>
+</body>
+
+<script src="assets/javascript/game.js"></script>
+
+</html>

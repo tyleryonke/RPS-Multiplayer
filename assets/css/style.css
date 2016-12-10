@@ -1,0 +1,130 @@
+@font-face {
+    font-family: streetFighter;
+    src: url(../streetFighter.ttf);
+}
+body {
+	font-family: streetFighter;
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+div {
+	border: 3px solid black;
+}
+form{
+  max-width: 500px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+.msg-wrapper{
+  max-height: 150px;
+  overflow: auto;
+  font-family: streetFighter;
+  padding-left: 10px;
+}
+.msg-wrapper em{
+  font-size: 15px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.msg-wrapper div{
+  font-size: 16px;
+}
+#errorZone{
+	display: none;
+}
+#player1ChoiceArea {
+	display: none;
+}
+#player2ChoiceArea {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	margin-bottom: -50px;
+}
+.scoreArea {
+	width: 45%;
+}
+#player1ScoreArea {
+	background-color: red;
+	float: left;
+}
+#player2ScoreArea {
+	background-color: blue;
+	float: right;
+}
+#nameInput {
+	width: 60%;
+}
+span {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#nameInputZoneInterior {
+	background-color: yellow;
+}
+#nameSubmit {
+	padding-top: 8px;
+	padding-left: 15px;
+	padding-right: 10px;
+	margin-left: 15px;
+	background-color: green;
+	font-family: streetFighter;
+}
+#chatRoom {
+	clear: both;
+	border: none;
+	padding-top: 15px;
+	font-family: Times;
+}
+#chatRoom div {
+	border: none;
+}
+#chatWhite {
+	background-color: white;
+}
+#resultsDiv {
+	display: none;
+}
+.scoreArea {
+	text-align: center;
+}
+.playerChoiceArea, #resultsDiv {
+	background-color: yellow;
+	text-align: center;
+}
+#errorZone {
+	background-color: orange;
+	text-align: center;
+}
+.playerChoiceButton {
+	background-color: green;
+}
+#leaveButton {
+	background-color: green;
+	font-family: streetFighter;
+}
+#leaveZone {
+	width: 60px;
+	margin: auto;
+	display: none;
+}
+#messageLabel {
+	font-family: streetFighter;
+	padding-left: 10px;
+}
+#messageInput {
+	font-family: streetFighter;
+	width: 70%;
+}
+#chatError {
+	background-color: orange;
+	display: none;
+	clear: both;
+	text-align: center;
+}
